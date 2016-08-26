@@ -133,14 +133,14 @@
 				9B035E811D6C1768006CC881 /* MLHomePageViewController.m */,
 				9B035E821D6C1768006CC881 /* MLLoginViewController.h */,
 				9B035E831D6C1768006CC881 /* MLLoginViewController.m */,
-				9B035E841D6C1768006CC881 /* MLMineViewController.h */,
-				9B035E851D6C1768006CC881 /* MLMineViewController.m */,
 				9B035E861D6C1768006CC881 /* MLNavigationController.h */,
 				9B035E871D6C1768006CC881 /* MLNavigationController.m */,
 				9B035E881D6C1768006CC881 /* MLOrderDetailViewController.h */,
 				9B035E891D6C1768006CC881 /* MLOrderDetailViewController.m */,
 				9B035E8A1D6C1768006CC881 /* MLOrderListViewController.h */,
 				9B035E8B1D6C1768006CC881 /* MLOrderListViewController.m */,
+				9B035E841D6C1768006CC881 /* MLMineViewController.h */,
+				9B035E851D6C1768006CC881 /* MLMineViewController.m */,
 				9B035E8C1D6C1768006CC881 /* MLUserHomePageViewController.h */,
 				9B035E8D1D6C1768006CC881 /* MLUserHomePageViewController.m */,
 				9B035E4C1D6C1734006CC881 /* AppDelegate.h */,
@@ -538,6 +538,7 @@
 				9B035E751D6C1734006CC881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B035E761D6C1734006CC881 /* Build configuration list for PBXNativeTarget "NavigationBarHiddenDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +547,7 @@
 				9B035E781D6C1734006CC881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B035E791D6C1734006CC881 /* Build configuration list for PBXNativeTarget "NavigationBarHiddenDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +556,7 @@
 				9B035E7B1D6C1734006CC881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

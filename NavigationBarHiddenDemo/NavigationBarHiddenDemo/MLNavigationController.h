@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  是否使用全屏返回手势
+ */
+static BOOL fullscreenPopGestureRecognizer = YES;
+
 @interface MLNavigationController : UINavigationController
 
 @end

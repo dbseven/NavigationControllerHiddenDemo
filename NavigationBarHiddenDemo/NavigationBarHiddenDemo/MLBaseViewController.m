@@ -7,6 +7,7 @@
 //
 
 #import "MLBaseViewController.h"
+#import "MLNavigationController.h"
 #import "MLHomePageViewController.h"
 #import "MLMineViewController.h"
 #import "MLUserHomePageViewController.h"
@@ -34,6 +35,7 @@
     }
     return self;
 }
+
 #pragma mark - ViewController Life Circle
 #pragma mark -
 #pragma mark ViewDidLoad
@@ -49,7 +51,9 @@
     [super viewWillAppear: animated];
     
     // 1. 返回手势代理
-    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+    if (!fullscreenPopGestureRecognizer) {
+        self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+    }
     
     // 2. 导航控制器代理
     if (hiddenType == MLNavigationHiddenTypeNavigationControllerDelegate) {
@@ -60,6 +64,15 @@
 #pragma mark ViewDidAppear
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear: animated];
+    
+    // 1. 根试图手势失效
+    if (!fullscreenPopGestureRecognizer) {
+        if (self == [self.navigationController.viewControllers firstObject]) {
+            self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+        } else {
+            self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+        }
+    }
 }
 
 #pragma mark ViewWillDisappear

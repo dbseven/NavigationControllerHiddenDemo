@@ -31,14 +31,19 @@ typedef NS_ENUM(NSInteger, MLNavigationHiddenType) {
     /**
      *  导航控制器代理模式: self.navigationController.delegate = self;
      */
-    MLNavigationHiddenTypeNavigationControllerDelegate = 4
+    MLNavigationHiddenTypeNavigationControllerDelegate = 4,
+    /**
+     *  在 ViewWillAppear 中 设置导航栏的隐藏.
+     */
+    MLNavigationHiddenTypeOnlyViewWillAppear = 5,
+    
 };
 
 
 /**
  *  全局控制导航栏隐藏的模式
  */
-static MLNavigationHiddenType hiddenType = MLNavigationHiddenTypeNormal;
+static MLNavigationHiddenType hiddenType = MLNavigationHiddenTypeOnlyViewWillAppear;
 
 
 @interface MLBaseViewController : UIViewController

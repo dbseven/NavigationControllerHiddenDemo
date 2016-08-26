@@ -23,6 +23,10 @@
 #pragma mark ViewWillAppear
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear: animated];
+    
+    if (hiddenType == MLNavigationHiddenTypeOnlyViewWillAppear) {
+        [self.navigationController setNavigationBarHidden: NO animated: animated];
+    }
 }
 
 #pragma mark ViewDidAppear

@@ -41,6 +41,7 @@
         }
             break;
         case MLNavigationHiddenTypeAutoAnimation:
+        case MLNavigationHiddenTypeOnlyViewWillAppear:
         {
             [self.navigationController setNavigationBarHidden: YES animated: animated];
         }
@@ -79,6 +80,12 @@
         case MLNavigationHiddenTypeAutoAnimation:
         {
             [self.navigationController setNavigationBarHidden: NO animated: animated];
+        }
+            break;
+            
+        case MLNavigationHiddenTypeOnlyViewWillAppear:
+        {
+            
         }
             break;
             
